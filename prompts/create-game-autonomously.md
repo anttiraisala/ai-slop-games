@@ -57,20 +57,19 @@ repository is in English; the text the player sees in the game is up to you).
 ## Step 3: Add the game to the root README
 
 When the game is finished, add it to the "Games" list in the `README.md` at
-the root of the repository. The general setup (installing Git, cloning the
-repository and the per-system command for opening a file in the browser) is
-already in the "Setup" section at the top of that README, so do not repeat
-it. The entry contains only the game name, a one-line description and the
-game-specific commands, using this template (replace the folder name):
+the root of the repository. The general setup (installing Git and Node.js and
+cloning the repository to `~/ai-slop-games`) is already in the "Setup"
+section at the top of that README, so do not repeat it. The entry contains
+only the game name, a one-line description and the game-specific commands,
+using this template (replace the folder name):
 
     ### <game name>
     <one-line description>
 
     ```
-    cd games/<timestamp>-<game-name>
+    cd ~/ai-slop-games/games/<timestamp>-<game-name>
+    npx http-server . -o
     ```
-    Then open `index.html` in the browser with the command for your system
-    from the Setup section (for example `open index.html` on macOS).
 
 If your game needs something beyond the Setup section, put the extra
 commands in the entry too.
@@ -84,11 +83,10 @@ Commit the finished game and the README entry with a clear message, run
 keep both entries) and push to `master`.
 
 Finally, in your last message in this chat, report the finished game and give
-me the install and start commands, the same ones you put in the README entry
-plus the setup for my system from the "Setup" section of the README:
+me the install and start commands: the setup for my system from the "Setup"
+section of the README (installing Git and Node.js and cloning to
+`~/ai-slop-games`), and the start commands of the game:
 
-    git clone https://github.com/anttiraisala/ai-slop-games.git
-    cd ai-slop-games/games/<timestamp>-<game-name>
-
-and then the command that opens `index.html` for macOS, Linux and Windows.
+    cd ~/ai-slop-games/games/<timestamp>-<game-name>
+    npx http-server . -o
 ````

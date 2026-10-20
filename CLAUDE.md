@@ -30,7 +30,9 @@
   score, and a way to restart.
 - A finished game gets an entry in the root `README.md` "Games" list with only
   its own start commands (see the prompt for the template). Installing Git,
-  cloning and opening files per system are in the README's "Setup" section.
+  installing Git and Node.js and cloning to `~/ai-slop-games` are in the
+  README's "Setup" section. Start a game with `cd ~/ai-slop-games/games/<folder>`
+  and `npx http-server . -o`.
 
 ## Language
 - Follow `language-rule.md`: everything saved to the repository (code,

@@ -6,21 +6,29 @@ guaranteed, fun is hoped for.
 
 ## Setup (once)
 
-The games are plain HTML, CSS and JavaScript, so you only need Git and a
-web browser. Install Git, then clone the repository once:
+The games are plain HTML, CSS and JavaScript. You need Git, Node.js and a web
+browser. Install Git and Node.js once:
 
-| System  | Install Git                                       | Open a file in the browser |
-|---------|---------------------------------------------------|----------------------------|
-| macOS   | `xcode-select --install` (or `brew install git`)  | `open <file>`              |
-| Linux   | `sudo apt install git` (Debian/Ubuntu) or `sudo dnf install git` (Fedora) | `xdg-open <file>` |
-| Windows | `winget install --id Git.Git -e` (PowerShell)     | `start <file>`             |
+| System  | Install Git and Node.js |
+|---------|-------------------------|
+| macOS   | `brew install git node` (install [Homebrew](https://brew.sh) first if needed) |
+| Linux (Debian/Ubuntu) | `sudo apt install git nodejs npm` |
+| Linux (Fedora) | `sudo dnf install git nodejs` |
+| Windows (PowerShell) | `winget install --id Git.Git -e` and `winget install --id OpenJS.NodeJS.LTS -e` |
+
+Then clone the repository into your home directory (the game commands below
+assume it is at `~/ai-slop-games`):
 
 ```
+cd ~
 git clone https://github.com/anttiraisala/ai-slop-games.git
-cd ai-slop-games
 ```
 
-Later, update the games with `git pull`.
+Later, update the games with `cd ~/ai-slop-games` and `git pull`.
+
+Every game is started the same way on every system: go to the game's folder
+and run `npx http-server . -o`. It starts a small local web server and opens
+the game in your browser. Stop it with Ctrl+C.
 
 ## How it works
 
@@ -49,7 +57,7 @@ lowercase, hyphenated game name, for example
 
 ## Games
 
-No games yet. Each finished game is listed here with its own start commands. Run them from the `ai-slop-games` folder after the Setup above.
+No games yet. Each finished game is listed here with its own start commands. Do the Setup above first.
 
 ### Lantern Keeper
 Survive the night as a dimming lantern: collect oil, burn away shadows, reach dawn.
