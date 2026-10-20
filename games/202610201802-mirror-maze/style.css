@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b0e1a; color: #dfe6ff; font-family: system-ui, sans-serif; text-align: center; }
+header { padding: 10px 0 0; }
+h1 { margin: 0; letter-spacing: 4px; color: #7fe7ff; text-shadow: 0 0 12px #2bb8e0; }
+#stats { display: flex; gap: 24px; justify-content: center; margin: 6px 0; font-size: 18px; }
+main { position: relative; display: inline-block; max-width: 100%; }
+canvas { max-width: 100%; height: auto; background: #10142a; border: 2px solid #26305c; border-radius: 8px; cursor: pointer; }
+#overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(5, 8, 20, .7); border-radius: 8px; }
+#overlay.hidden { display: none; }
+#overlayBox { background: #19204a; border: 2px solid #7fe7ff; border-radius: 12px; padding: 24px 40px; box-shadow: 0 0 30px #2bb8e0; }
+#overlayBox h2 { margin: 0 0 8px; color: #ffe27f; }
+button { background: #26305c; color: #dfe6ff; border: 1px solid #4a5aa8; border-radius: 6px; padding: 8px 14px; font-size: 15px; cursor: pointer; margin: 4px; }
+button:hover { background: #34417e; }
+button:disabled { opacity: .4; cursor: default; }
+#levelButtons button { width: 40px; padding: 6px 0; }
+#levelButtons button.current { border-color: #7fe7ff; box-shadow: 0 0 8px #2bb8e0; }
+#levelButtons button.done { background: #1f6b4a; }
+.help { color: #8c97c9; margin: 6px; }

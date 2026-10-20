@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirror Maze</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Mirror Maze</h1>
+  <div id="stats">
+    <span id="levelLabel"></span>
+    <span id="movesLabel"></span>
+    <span id="targetsLabel"></span>
+  </div>
+</header>
+<main>
+  <canvas id="board" width="780" height="560"></canvas>
+  <div id="overlay" class="hidden">
+    <div id="overlayBox">
+      <h2 id="overlayTitle"></h2>
+      <p id="overlayText"></p>
+      <button id="overlayButton"></button>
+    </div>
+  </div>
+</main>
+<footer>
+  <div id="levelButtons"></div>
+  <div id="controls">
+    <button id="resetButton">Restart level (R)</button>
+    <button id="hintButton">Hint (H)</button>
+  </div>
+  <p class="help">Click a mirror to flip it. Light up every target with the laser.</p>
+</footer>
+<script src="levels.js"></script>
+<script src="logic.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
