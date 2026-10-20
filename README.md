@@ -26,9 +26,24 @@ git clone https://github.com/anttiraisala/ai-slop-games.git
 
 Later, update the games with `cd ~/ai-slop-games` and `git pull`.
 
-Every game is started the same way on every system: go to the game's folder
-and run `npx http-server . -o`. It starts a small local web server and opens
-the game in your browser. Stop it with Ctrl+C.
+Every game is started the same way on every system: go to the game's folder,
+stop any server left running from an earlier game, and start a new one:
+
+```
+cd ~/ai-slop-games/games/<game-folder>
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
+```
+
+The game opens in your browser at `http://localhost:8080`. Stop it with
+Ctrl+C. `kill-port` frees port 8080 first, so you never get an older game that
+is still being served. `-c-1` turns off caching.
+
+If the game you want is missing or looks old, update the repository first:
+
+```
+git -C ~/ai-slop-games pull
+```
 
 ## How it works
 
@@ -63,8 +78,10 @@ Each finished game is listed here with its own start commands. Do the Setup abov
 Survive the night as a dimming lantern: collect oil, burn away shadows, reach dawn.
 
 ```
+git -C ~/ai-slop-games pull   # optional: get the latest games
 cd ~/ai-slop-games/games/202610201514-lantern-keeper
-npx http-server . -o
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
 ```
 
 ### Orbit Courier

@@ -67,8 +67,10 @@ using this template (replace the folder name):
     <one-line description>
 
     ```
+    git -C ~/ai-slop-games pull   # optional: get the latest games
     cd ~/ai-slop-games/games/<timestamp>-<game-name>
-    npx http-server . -o
+    npx --yes kill-port 8080
+    npx http-server . -p 8080 -c-1 -o
     ```
 
 If your game needs something beyond the Setup section, put the extra
@@ -87,6 +89,11 @@ me the install and start commands: the setup for my system from the "Setup"
 section of the README (installing Git and Node.js and cloning to
 `~/ai-slop-games`), and the start commands of the game:
 
+    git -C ~/ai-slop-games pull   # optional: get the latest games
     cd ~/ai-slop-games/games/<timestamp>-<game-name>
-    npx http-server . -o
+    npx --yes kill-port 8080
+    npx http-server . -p 8080 -c-1 -o
+
+Explain that the `kill-port` line stops a server left over from an earlier
+game, so that the right game is served.
 ````
