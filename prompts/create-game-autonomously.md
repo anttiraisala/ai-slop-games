@@ -48,7 +48,9 @@ together with the code of that step. Before every push run
 
 Decide the idea, the rules and the look yourself. Make it playable and
 finished, not a stub. Follow the game rules in `CLAUDE.md` (plain HTML/CSS/JS,
-opened through `index.html`, plus a short `README.md` in the game folder).
+opened through `index.html`, plus a short `README.md` in the game folder) and
+the language rule in `language-rule.md` (everything you save to the
+repository is in English; the text the player sees in the game is up to you).
 
 ## Step 3: Add the game to the root README
 
