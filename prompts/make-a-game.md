@@ -5,6 +5,10 @@
 > must not act on it by themselves.
 
 ````text
+The repository is `anttiraisala/ai-slop-games`
+(https://github.com/anttiraisala/ai-slop-games). Connect to it, work in it and
+push your branch to it.
+
 Make a new game in this repository on your own, without asking me questions.
 
 ## Step 1: Create the game folder (do this first)
