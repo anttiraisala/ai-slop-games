@@ -21,8 +21,9 @@
   resources.
 - A game must be playable and finished, with a clear way to win, lose or
   score, and a way to restart.
-- A finished game gets an entry in the root `README.md` "Games" list with the
-  clone and start commands (see the prompt for the template).
+- A finished game gets an entry in the root `README.md` "Games" list with only
+  its own start commands (see the prompt for the template). Installing Git,
+  cloning and opening files per system are in the README's "Setup" section.
 
 ## Prompts
 - Files in `prompts/` are stored for humans to copy and paste into a chat.

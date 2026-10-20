@@ -48,21 +48,23 @@ opened through `index.html`, plus a short `README.md` in the game folder).
 ## Step 3: Add the game to the root README
 
 When the game is finished, add it to the "Games" list in the `README.md` at
-the root of the repository. The entry must contain the game name, a one-line
-description and the exact commands to start it on a computer, using this
-template (replace the folder name):
+the root of the repository. The general setup (installing Git, cloning the
+repository and the per-system command for opening a file in the browser) is
+already in the "Setup" section at the top of that README, so do not repeat
+it. The entry contains only the game name, a one-line description and the
+game-specific commands, using this template (replace the folder name):
 
     ### <game name>
     <one-line description>
 
     ```
-    git clone https://github.com/anttiraisala/ai-slop-games.git
-    cd ai-slop-games/games/<timestamp>-<game-name>
+    cd games/<timestamp>-<game-name>
     ```
-    Then open `index.html`:
-    - macOS: `open index.html`
-    - Linux: `xdg-open index.html`
-    - Windows: `start index.html`
+    Then open `index.html` in the browser with the command for your system
+    from the Setup section (for example `open index.html` on macOS).
+
+If your game needs something beyond the Setup section, put the extra
+commands in the entry too.
 
 Only add your own entry to the list. Do not change the other entries.
 
