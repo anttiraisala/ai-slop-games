@@ -50,3 +50,11 @@ lowercase, hyphenated game name, for example
 ## Games
 
 No games yet. Each finished game is listed here with its own start commands. Run them from the `ai-slop-games` folder after the Setup above.
+
+### Lantern Keeper
+Survive the night as a dimming lantern: collect oil, burn away shadows, reach dawn.
+
+```
+cd games/202610201514-lantern-keeper
+```
+Then open `index.html` in the browser with the command for your system from the Setup section (for example `open index.html` on macOS).
