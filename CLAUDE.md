@@ -5,6 +5,11 @@
   open a pull request unless the user asks for one.
 - Run `git pull --rebase origin master` before every push.
 
+## Autonomy
+- When working from the game prompt, never ask the user questions. Decide
+  unclear things yourself and work to the end. Progress updates are fine;
+  waiting for answers is not. At the end, report the finished game.
+
 ## Games
 - Each game lives in its own folder `games/YYYYMMDDHHMM-game-name/`.
   The timestamp is UTC from `date -u +%Y%m%d%H%M`; the name is lowercase,

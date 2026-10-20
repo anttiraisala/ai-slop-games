@@ -9,7 +9,12 @@ The repository is `anttiraisala/ai-slop-games`
 (https://github.com/anttiraisala/ai-slop-games). Connect to it, work in it and
 push to it.
 
-Make a new game in this repository on your own, without asking me questions.
+Never ask me anything. Once you start, work on your own all the way to the
+end. If something is unclear, decide it yourself and keep going. You may print
+short progress updates while you work, but do not wait for my answers. When
+you are done, just report the finished game.
+
+Make a new game in this repository on your own.
 Always work on the `master` branch. Do not create new branches and do not
 open a pull request.
 
