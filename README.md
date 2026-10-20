@@ -66,3 +66,11 @@ Survive the night as a dimming lantern: collect oil, burn away shadows, reach da
 cd ~/ai-slop-games/games/202610201514-lantern-keeper
 npx http-server . -o
 ```
+
+### Orbit Courier
+Slingshot parcels past attracting and repelling planets to the delivery station across 8 levels.
+
+```
+cd ~/ai-slop-games/games/202610201548-orbit-courier
+npx http-server . -o
+```

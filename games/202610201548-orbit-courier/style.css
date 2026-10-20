@@ -1,0 +1,4 @@
+html, body { margin: 0; height: 100%; background: #05060f; color: #dfe8ff; font-family: system-ui, sans-serif; }
+body { display: flex; align-items: center; justify-content: center; }
+#wrap { width: min(100vw, calc(100vh * 1.6)); }
+canvas { width: 100%; height: auto; display: block; background: #05060f; cursor: crosshair; touch-action: none; }
