@@ -32,7 +32,8 @@ branch instead.
 ## Step 3: Build the game
 
 Decide the idea, the rules and the look yourself. Make it playable and
-finished, not a stub.
+finished, not a stub. Follow the game rules in `CLAUDE.md` (plain HTML/CSS/JS,
+opened through `index.html`, plus a short `README.md` in the game folder).
 
 ## Step 4: Commit and push
 
