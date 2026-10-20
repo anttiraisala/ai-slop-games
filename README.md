@@ -88,6 +88,8 @@ npx http-server . -p 8080 -c-1 -o
 Slingshot parcels past attracting and repelling planets to the delivery station across 8 levels.
 
 ```
+git -C ~/ai-slop-games pull   # optional: get the latest games
 cd ~/ai-slop-games/games/202610201548-orbit-courier
-npx http-server . -o
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
 ```
