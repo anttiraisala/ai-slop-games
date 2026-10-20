@@ -93,3 +93,13 @@ cd ~/ai-slop-games/games/202610201548-orbit-courier
 npx --yes kill-port 8080
 npx http-server . -p 8080 -c-1 -o
 ```
+
+### Chain Bloom
+Plant a single bloom among drifting spores and chain-react your way through 10 levels.
+
+```
+git -C ~/ai-slop-games pull   # optional: get the latest games
+cd ~/ai-slop-games/games/202610201737-chain-bloom
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
+```
