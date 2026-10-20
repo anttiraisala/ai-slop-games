@@ -11,8 +11,10 @@ push to it.
 
 Never ask me anything. Once you start, work on your own all the way to the
 end. If something is unclear, decide it yourself and keep going. You may print
-short progress updates while you work, but do not wait for my answers. When
-you are done, just report the finished game.
+short progress updates while you work, but do not wait for my answers. While
+you build the game you may also show me screenshots of it and tell me how the
+work is going. When you are done, report the finished game here in the chat
+and include the commands for installing and starting it (see Step 4).
 
 Make a new game in this repository on your own.
 Always work on the `master` branch. Do not create new branches and do not
@@ -80,4 +82,13 @@ Only add your own entry to the list. Do not change the other entries.
 Commit the finished game and the README entry with a clear message, run
 `git pull --rebase origin master` (if a conflict appears in the README,
 keep both entries) and push to `master`.
+
+Finally, in your last message in this chat, report the finished game and give
+me the install and start commands, the same ones you put in the README entry
+plus the setup for my system from the "Setup" section of the README:
+
+    git clone https://github.com/anttiraisala/ai-slop-games.git
+    cd ai-slop-games/games/<timestamp>-<game-name>
+
+and then the command that opens `index.html` for macOS, Linux and Windows.
 ````

@@ -8,7 +8,9 @@
 ## Autonomy
 - When working from the game prompt, never ask the user questions. Decide
   unclear things yourself and work to the end. Progress updates are fine;
-  waiting for answers is not. At the end, report the finished game.
+  waiting for answers is not. Screenshots and progress stories in the chat
+  are fine. At the end, report the finished game in the chat together with
+  the commands for installing and starting it.
 
 ## Games
 - Each game lives in its own folder `games/YYYYMMDDHHMM-game-name/`.
