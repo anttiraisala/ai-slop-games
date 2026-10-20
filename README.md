@@ -57,12 +57,12 @@ lowercase, hyphenated game name, for example
 
 ## Games
 
-No games yet. Each finished game is listed here with its own start commands. Do the Setup above first.
+Each finished game is listed here with its own start commands. Do the Setup above first.
 
 ### Lantern Keeper
 Survive the night as a dimming lantern: collect oil, burn away shadows, reach dawn.
 
 ```
-cd games/202610201514-lantern-keeper
+cd ~/ai-slop-games/games/202610201514-lantern-keeper
+npx http-server . -o
 ```
-Then open `index.html` in the browser with the command for your system from the Setup section (for example `open index.html` on macOS).
