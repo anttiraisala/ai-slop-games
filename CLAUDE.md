@@ -14,6 +14,8 @@
 - A game must run without a build step or installation: plain HTML, CSS and
   JavaScript, opened through `index.html` in a browser. No external network
   resources.
+- Every game folder has a `progress.md` that is created first, committed
+  and pushed right at the start, and updated during development.
 - Every game folder has a short `README.md`: game name, one-line description,
   how to play, controls.
 - A game must be playable and finished, with a clear way to win, lose or

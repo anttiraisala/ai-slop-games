@@ -21,15 +21,27 @@ Make a new game in this repository on your own, without asking me questions.
 3. Create a new folder under `games/` named `<timestamp>-<game-name>`.
    Example: `games/202610201436-rock-paper-scissors/`
 4. Put every file of the game inside that folder, and nothing outside it.
+5. Right away, before building anything, create the file
+   `games/<timestamp>-<game-name>/progress.md`. Start it with a short
+   description of what you are about to make (a few sentences, or just a
+   heading if you do not know yet).
 
-## Step 2: Create a branch
+## Step 2: Create a branch and commit progress.md
 
 Never commit to `master`. Do your work on a new branch named
 `game/<timestamp>-<game-name>` (the same name as the folder).
 If your environment has already assigned you a working branch, use that
 branch instead.
 
+Immediately commit `progress.md` to that branch and push it, so the start of
+the work is visible before the game exists.
+
 ## Step 3: Build the game
+
+Keep `progress.md` up to date while you work: after each meaningful step
+(idea decided, core mechanics done, graphics done, bugs fixed, and so on) add
+a short note of what you did and what is next, then commit and push it
+together with the code of that step.
 
 Decide the idea, the rules and the look yourself. Make it playable and
 finished, not a stub. Follow the game rules in `CLAUDE.md` (plain HTML/CSS/JS,
