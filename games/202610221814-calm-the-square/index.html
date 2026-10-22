@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calm the Square</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <div class="hud-block">
+        <div class="hud-label">Day <span id="day-text">1</span> / 7</div>
+        <div class="bar"><div id="day-bar" class="bar-fill day"></div></div>
+      </div>
+      <div class="hud-block">
+        <div class="hud-label">Calm <span id="calm-text">80</span></div>
+        <div class="bar"><div id="calm-bar" class="bar-fill"></div></div>
+      </div>
+      <div class="hud-block">
+        <div class="hud-label">Budget <span id="budget-text">60</span></div>
+        <div class="bar"><div id="budget-bar" class="bar-fill budget"></div></div>
+      </div>
+    </header>
+
+    <div id="stage">
+      <canvas id="game" width="900" height="560"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <h1 id="overlay-title">Calm the Square</h1>
+          <p id="overlay-text"></p>
+          <button id="overlay-button" type="button">Start</button>
+        </div>
+      </div>
+    </div>
+
+    <nav id="toolbar"></nav>
+    <div id="hint">Pick a tool (keys 1-5), then click the map. P pauses.</div>
+    <ul id="ticker"></ul>
+  </div>
+
+  <script src="logic.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

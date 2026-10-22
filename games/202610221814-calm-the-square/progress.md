@@ -14,3 +14,7 @@ fires and protecting shops.
   march on the square, fires and looting drain the calm meter, five player
   tools. Balanced with a simple bot in Node (a careful bot wins 70-90% of runs,
   doing nothing always loses). Next: canvas rendering, HUD and menus.
+- Canvas rendering, HUD, toolbar, menu, pause, win and lose screens done
+  (`main.js`, `index.html`, `style.css`). Tested in headless Chromium with no
+  console errors; idle play loses on day 3 as expected.
+- Game README written. Next: add the root README entry and push.

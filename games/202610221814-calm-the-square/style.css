@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0f16;
+  color: #e6ebf5;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 920px;
+  padding: 10px;
+}
+
+#hud {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.hud-label {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9fb0cc;
+  margin-bottom: 3px;
+}
+
+.hud-label span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.bar {
+  height: 12px;
+  background: #1a2230;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #2a3547;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 50%;
+  background: #4cc38a;
+  transition: background 0.2s;
+}
+
+.bar-fill.day {
+  background: #6f8fd9;
+}
+
+.bar-fill.budget {
+  background: #e0b34a;
+}
+
+#stage {
+  position: relative;
+  line-height: 0;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #2a3547;
+  background: #11161f;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 11, 17, 0.78);
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.panel {
+  max-width: 560px;
+  padding: 24px 28px;
+  background: #151c28;
+  border: 1px solid #34425a;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.panel h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.panel p {
+  margin: 0 0 16px;
+  color: #c3cde0;
+  white-space: pre-line;
+  text-align: left;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+#overlay-button {
+  padding: 10px 26px;
+  border: 0;
+  border-radius: 8px;
+  background: #4cc38a;
+  color: #07120c;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#overlay-button:hover {
+  background: #66d9a1;
+}
+
+#toolbar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tool {
+  padding: 8px 6px;
+  background: #151c28;
+  border: 2px solid #2a3547;
+  border-radius: 8px;
+  color: #e6ebf5;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.tool .tool-key {
+  display: inline-block;
+  min-width: 18px;
+  padding: 0 4px;
+  margin-right: 4px;
+  background: #2a3547;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.tool .tool-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tool .tool-cost {
+  display: block;
+  font-size: 12px;
+  color: #e0b34a;
+}
+
+.tool.selected {
+  border-color: #6f8fd9;
+  background: #1c2740;
+}
+
+.tool.broke {
+  opacity: 0.45;
+}
+
+#hint {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9fb0cc;
+  min-height: 18px;
+}
+
+#ticker {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  font-size: 13px;
+  color: #b8c3d9;
+  min-height: 70px;
+}
+
+#ticker li {
+  padding: 2px 0;
+  border-bottom: 1px solid #1a2230;
+}
+
+#ticker li:first-child {
+  color: #fff;
+}
+
+@media (max-width: 560px) {
+  #toolbar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .panel {
+    padding: 14px;
+    max-width: 92%;
+  }
+
+  .panel h1 {
+    font-size: 22px;
+  }
+
+  .panel p {
+    font-size: 13px;
+  }
+}
