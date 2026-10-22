@@ -10,3 +10,7 @@ fires and protecting shops.
 
 ## Log
 - Idea decided, folder created.
+- Core logic done (`logic.js`): schools decay, blockade crowds grow angry and
+  march on the square, fires and looting drain the calm meter, five player
+  tools. Balanced with a simple bot in Node (a careful bot wins 70-90% of runs,
+  doing nothing always loses). Next: canvas rendering, HUD and menus.
