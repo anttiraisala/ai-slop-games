@@ -113,3 +113,13 @@ cd ~/ai-slop-games/games/202610201802-mirror-maze
 npx --yes kill-port 8080
 npx http-server . -p 8080 -c-1 -o
 ```
+
+### Banana Peel Ambush
+You are a banana peel: hold still to turn invisible and make 5000 points' worth of pedestrians slip.
+
+```
+git -C ~/ai-slop-games pull   # optional: get the latest games
+cd ~/ai-slop-games/games/202610220957-banana-peel-ambush
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
+```
