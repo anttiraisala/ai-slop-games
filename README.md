@@ -133,3 +133,13 @@ cd ~/ai-slop-games/games/202610221814-calm-the-square
 npx --yes kill-port 8080
 npx http-server . -p 8080 -c-1 -o
 ```
+
+### Upside-Down Roadster
+Floor a red roadster over a kicker to jump parked cars, ride a giant curl ramp upside down and use air jets to land on your wheels across 6 levels.
+
+```
+git -C ~/ai-slop-games pull   # optional: get the latest games
+cd ~/ai-slop-games/games/202610221843-upside-down-roadster
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
+```

@@ -12,3 +12,8 @@ wheels. Score by clearing cars, clean landings and style.
   real contact loss, jets, landing checks, trajectory preview. A Node bot
   clears all 6 levels, so every level is winnable.
 - Next: rendering, audio, game flow, HUD, README.
+- Rendering, audio, HUD, game flow (6 levels, lives, scoring, best score),
+  touch buttons and README done.
+- Verified in headless Chrome: a bot plays all 6 levels to the end with no
+  console errors. Added a trajectory preview (green/red dotted path).
+- Finished.
