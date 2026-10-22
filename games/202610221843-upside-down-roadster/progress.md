@@ -8,3 +8,7 @@ wheels. Score by clearing cars, clean landings and style.
 
 ## Log
 - Started: folder and plan created.
+- Physics module done (js/physics.js): ground/rails/air modes, curl ramp with
+  real contact loss, jets, landing checks, trajectory preview. A Node bot
+  clears all 6 levels, so every level is winnable.
+- Next: rendering, audio, game flow, HUD, README.
