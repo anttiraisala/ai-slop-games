@@ -123,3 +123,13 @@ cd ~/ai-slop-games/games/202610220957-banana-peel-ambush
 npx --yes kill-port 8080
 npx http-server . -p 8080 -c-1 -o
 ```
+
+### Calm the Square
+Run a city crisis desk for 7 days: repair crumbling schools, talk down crowds and put out fires before the Calm meter hits zero.
+
+```
+git -C ~/ai-slop-games pull   # optional: get the latest games
+cd ~/ai-slop-games/games/202610221814-calm-the-square
+npx --yes kill-port 8080
+npx http-server . -p 8080 -c-1 -o
+```
